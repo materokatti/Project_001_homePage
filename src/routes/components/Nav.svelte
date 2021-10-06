@@ -1,0 +1,41 @@
+<script lang="ts">
+	import { fly } from 'svelte/transition';
+	import { quartInOut } from 'svelte/easing';
+	import navList from '$lib/data/navList.json';
+	let isNavOn: boolean = false;
+	const navToggle = () => {
+		isNavOn = !isNavOn;
+	};
+	$: console.log('isNavOn', isNavOn);
+</script>
+
+<header class="fixed left-0 top-0 w-screen h-auto ">
+	<div class="container flex items-center justify-center transition-all">
+		<div class="flex items-center justify-between w-full height-full p-1">
+			<div class="brand ml-2">
+				<a href="#hero"><h1><span>D</span>oyun <span>H</span>wang</h1></a>
+			</div>
+			<div class="nav-list">
+				<div
+					class="h-10 w-10 border border-gray-400 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 mr-2"
+					on:click={navToggle}
+				>
+					<i class="fas fa-bars text-gray-400" />
+					<div class="h-10 w-10 border border-gray-400 rounded-full absolute animate-ping" />
+				</div>
+
+				{#if isNavOn}
+					<ul
+						class="absolute bg-gray-900 w-screen h-screen left-0 top-0 flex flex-col justify-center items-center z-10 overflow-x-hidden transition"
+						in:fly={{ x: 1000, duration: 500, easing: quartInOut }}
+						out:fly={{ duration: 500, x: 1000, easing: quartInOut }}
+					>
+						{#each navList as list}
+							<li><a on:click={navToggle} href="/" data-after={list}>{list}</a></li>
+						{/each}
+					</ul>
+				{/if}
+			</div>
+		</div>
+	</div>
+</header>
