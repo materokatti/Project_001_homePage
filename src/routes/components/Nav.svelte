@@ -9,12 +9,9 @@
 	$: console.log('isNavOn', isNavOn);
 </script>
 
-<header class="fixed left-0 top-0 w-screen h-auto ">
+<header class="fixed left-0 top-0 w-screen h-auto z-50 ">
 	<div class="container flex items-center justify-center transition-all">
-		<div class="flex items-center justify-between w-full height-full p-1">
-			<div class="brand ml-2">
-				<a href="#hero"><h1><span>D</span>oyun <span>H</span>wang</h1></a>
-			</div>
+		<div class="flex items-center justify-end w-full height-full p-1">
 			<div class="nav-list">
 				<div
 					class="h-10 w-10 border border-gray-400 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 mr-2"
@@ -26,7 +23,7 @@
 
 				{#if isNavOn}
 					<ul
-						class="absolute bg-gray-900 w-screen h-screen left-0 top-0 flex flex-col justify-center items-center z-10 overflow-x-hidden transition"
+						class="absolute bg-gray-900 w-screen h-screen left-0 top-0 flex flex-col text-gray-50 justify-center items-center z-10 overflow-x-hidden transition"
 						in:fly={{ x: 1000, duration: 500, easing: quartInOut }}
 						out:fly={{ duration: 500, x: 1000, easing: quartInOut }}
 					>
