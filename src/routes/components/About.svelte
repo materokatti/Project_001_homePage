@@ -3,7 +3,9 @@
 	import { quartInOut } from 'svelte/easing';
 	import aboutImg from '$lib/data/aboutImg';
 	let isDescOn: Boolean = false;
+	$: selectedInfo = {};
 	const descToggle = (img) => {
+		selectedInfo = img;
 		isDescOn = !isDescOn;
 		console.log(img);
 	};
@@ -24,19 +26,22 @@
 						descToggle(img);
 					}}
 				/>
-				{#if isDescOn}
-					<div
-						class="flex flex-col justify-center items-center fixed top-0 left-0 h-screen w-full bg-gray-900 z-50 text-gray-50 "
-						in:fly={{ duration: 500, x: 500, easing: quartInOut }}
-						out:fly={{ duration: 500, x: 500, easing: quartInOut }}
-					>
-						안녕하세요
-						<img src={img.src} alt="about me description" />
-						<title>{img.title}</title>
-						<p>{img.desc}</p>
-					</div>
-				{/if}
 			{/each}
+			{#if isDescOn}
+				<div
+					class="flex flex-col justify-center items-center fixed top-0 left-0 h-screen w-full bg-gray-900 z-50 text-gray-50 "
+					in:fly={{ duration: 500, x: 500, easing: quartInOut }}
+					out:fly={{ duration: 500, x: 500, easing: quartInOut }}
+					on:click={() => {
+						isDescOn = !isDescOn;
+					}}
+				>
+					안녕하세요
+					<img src={selectedInfo.src} alt="about me description" />
+					<title>{selectedInfo.title}</title>
+					<p>{selectedInfo.desc}</p>
+				</div>
+			{/if}
 		</div>
 	</div>
 </section>
