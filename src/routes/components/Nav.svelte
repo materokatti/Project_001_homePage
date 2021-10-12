@@ -10,7 +10,7 @@
 </script>
 
 <header class="fixed left-0 top-0 w-screen h-auto z-50 ">
-	<div class="container flex items-center justify-center transition-all">
+	<div class="container min-h-full transition-all">
 		<div class="flex items-center justify-end w-full height-full p-1">
 			<div class="nav-list">
 				<div
