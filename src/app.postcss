@@ -2,10 +2,30 @@
 
 * {
 	@apply p-0 m-0 box-border;
-	font-family: 'Open Sans', 'Noto Sans KR', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
+
+html {
+	scroll-behavior: smooth;
+}
+
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
 h1 {
-	@apply text-2xl font-semibold;
+	@apply text-4xl font-semibold;
 }
 
 h2 {
@@ -14,6 +34,18 @@ h2 {
 
 .container {
 	@apply flex items-center justify-center min-h-screen w-full;
+}
+
+.hero::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: -1;
 }
 
 /* Write your global styles here, in PostCSS syntax */
