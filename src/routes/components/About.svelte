@@ -36,10 +36,9 @@
 						isDescOn = !isDescOn;
 					}}
 				>
-					안녕하세요
-					<img src={selectedInfo.src} alt="about me description" />
-					<title>{selectedInfo.title}</title>
-					<p>{selectedInfo.desc}</p>
+					<img class="w-1/2 text-white" src={selectedInfo.src} alt="about me description" />
+					<title class="text-white">{selectedInfo.title}</title>
+					<p class="text-white p-3">{selectedInfo.desc}</p>
 				</div>
 			{/if}
 		</div>
