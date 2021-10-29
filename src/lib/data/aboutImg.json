@@ -5,17 +5,17 @@
 		"title": "1"
 	},
 	{
-		"src": "https://img.icons8.com/carbon-copy/100/000000/spain.png",
-		"desc": "I studied this at university. This has had a huge impact on the way I am now.",
+		"src": "src/lib/images/spain2.png",
+		"desc": "I studied Spanish at university. This has had a huge impact on the way I am now.",
 		"title": "2"
 	},
 	{
-		"src": "https://img.icons8.com/dotty/480/000000/marketing.png",
+		"src": "src/lib/images/marketing.png",
 		"desc": "I studied Marketing as a minor. I am always thinking about 'value to deliver for consumers', which is the basis of marketing.",
 		"title": "3"
 	},
 	{
-		"src": "https://img.icons8.com/external-flatarticons-blue-flatarticons/520/000000/external-broadcast-strategy-flatarticons-blue-flatarticons.png",
+		"src": "src/lib/images/global.png",
 		"desc": "I want to grow as an international regional expert. The ultimate goal is to develop programs that help solve the world's problems.",
 		"title": "4"
 	}

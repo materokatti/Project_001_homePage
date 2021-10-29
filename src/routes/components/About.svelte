@@ -7,7 +7,7 @@
 	const descToggle = (img) => {
 		selectedInfo = img;
 		isDescOn = !isDescOn;
-		console.log(img);
+		console.log('img:', img, 'selectedInfo:', selectedInfo);
 	};
 </script>
 
@@ -19,7 +19,7 @@
 		<div class="grid grid-cols-2 gap-5 mt-4">
 			{#each aboutImg as img, index}
 				<img
-					class="transform-gpu p-5 w-24 shadow-xl hover:scale-125 transition-all"
+					class="transform-gpu p-5 w-24 h-24 shadow-xl hover:scale-125 transition-all"
 					src={img.src}
 					alt="about me icon"
 					on:click={() => {
@@ -28,6 +28,7 @@
 				/>
 			{/each}
 			{#if isDescOn}
+				<title class="text-white">{selectedInfo.title}</title>
 				<div
 					class="flex flex-col justify-center items-center fixed top-0 left-0 h-screen w-full bg-gray-900 z-50 text-gray-50 "
 					in:fly={{ duration: 500, x: 500, easing: quartInOut }}
@@ -37,8 +38,8 @@
 					}}
 				>
 					<img class="w-1/2 text-white" src={selectedInfo.src} alt="about me description" />
-					<title class="text-white">{selectedInfo.title}</title>
-					<p class="text-white p-3">{selectedInfo.desc}</p>
+
+					<p class="text-white text-lg p-5">{selectedInfo.desc}</p>
 				</div>
 			{/if}
 		</div>
