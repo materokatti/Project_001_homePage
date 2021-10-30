@@ -11,7 +11,7 @@
 	};
 </script>
 
-<section>
+<section id="About">
 	<div class="relative flex flex-col min-h-screen w-full items-center justify-center">
 		<div class="service-top">
 			<h1>Who Am I?</h1>

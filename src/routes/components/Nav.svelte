@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
+	import { goto } from '$app/navigation';
 	import { quartInOut } from 'svelte/easing';
 	import navList from '$lib/data/navList.json';
+	import { list } from 'postcss';
 	let isNavOn: boolean = false;
 	const navToggle = () => {
 		isNavOn = !isNavOn;
@@ -28,7 +30,11 @@
 						out:fly={{ duration: 500, x: 1000, easing: quartInOut }}
 					>
 						{#each navList as list}
-							<li><a on:click={navToggle} href="/" data-after={list}>{list}</a></li>
+							<li>
+								<a on:click={navToggle} href={list.href} data-after={list.title}>
+									{list.title}
+								</a>
+							</li>
 						{/each}
 					</ul>
 				{/if}
