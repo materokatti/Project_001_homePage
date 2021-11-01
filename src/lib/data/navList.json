@@ -1,5 +1,5 @@
 [
-	{ "title": "Home", "href": "/" },
+	{ "title": "Home", "href": "#" },
 	{ "title": "Who am I", "href": "#About" },
 	{ "title": "Project", "href": "#project" },
 	{ "title": "Contact", "href": "#contact" }
