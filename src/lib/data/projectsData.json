@@ -1,0 +1,18 @@
+[
+	{
+		"id": 1,
+		"name": "Javascript",
+		"src": "src/lib/images/JavaScript_logo.svg",
+		"projects": [
+			{ "title": "project1", "link": "/" },
+			{ "title": "project2", "link": "/" },
+			{ "title": "project3", "link": "/" }
+		]
+	},
+	{
+		"id": 2,
+		"name": "CSS",
+		"src": "src/lib/images/css3.svg",
+		"projects": [{ "title": "project1", "link": "/" }]
+	}
+]

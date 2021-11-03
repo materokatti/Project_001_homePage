@@ -31,7 +31,7 @@
 				/>
 			</h1>
 			<a
-				href="/"
+				href="#projects"
 				type="button"
 				class="border-2 border-green-300 text-gray-50 px-4 mt-10 hover:bg-green-300 ">Portfolio</a
 			>
