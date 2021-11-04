@@ -7,7 +7,7 @@
 
 <section id="projects">
 	<div class="flex-col py-10 max-w-6xl container">
-		<h1 class="mb-10">Projects</h1>
+		<h1 class="mb-3">Projects</h1>
 		<div class="flexBoxCenter min-w-full flex-col">
 			{#each projectsData as project, index}
 				<div
@@ -28,7 +28,9 @@
 							out:slide={{ duration: 300, easing: quartInOut }}
 						>
 							{#each project.projects as eachProject, index}
-								<p class="text-center text-base">{eachProject.title}</p>
+								<a href={eachProject.link} class="block text-center text-base font-light py-1"
+									>{eachProject.title}</a
+								>
 							{/each}
 						</div>
 					{/if}

@@ -16,16 +16,16 @@
 <section class="hero relative z-10 bg-hero-back-to-t">
 	<div class="flex mx-0 my-auto pl-5 py-5 min-h-screen w-full items-center justify-start">
 		<div>
-			<h1 class="animate-text_reveal_1 relative w-max text-transparent">
+			<h1 class="animate-text_reveal_1 relative w-max text-transparent font-semibold">
 				Hello
 				<span class="absolute top-0 left-0 h-full w-0 bg-green-300 animate-text_reaveal_box_1" />
 			</h1>
-			<h1 class="animate-text_reveal_2 relative w-max text-transparent">
+			<h1 class="animate-text_reveal_2 relative w-max text-transparent font-semibold">
 				My Name is<span
 					class="absolute top-0 left-0 h-full w-0 bg-green-300 animate-text_reaveal_box_2"
 				/>
 			</h1>
-			<h1 class="animate-text_reveal_name relative w-max text-transparent">
+			<h1 class="animate-text_reveal_name relative w-max text-transparent font-semibold">
 				Doyun <span
 					class="absolute top-0 left-0 h-full w-0 bg-green-300 animate-text_reveal_box_3"
 				/>
