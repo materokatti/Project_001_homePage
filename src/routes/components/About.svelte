@@ -14,7 +14,7 @@
 <section id="About">
 	<div class="relative flex flex-col min-h-screen w-full items-center justify-center">
 		<div class="service-top">
-			<h1>Who Am I</h1>
+			<h1 class="title">Who Am I</h1>
 		</div>
 		<div class="grid grid-cols-2 gap-5 mt-4">
 			{#each aboutImg as img, index}
