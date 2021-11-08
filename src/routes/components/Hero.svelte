@@ -30,11 +30,22 @@
 					class="absolute top-0 left-0 h-full w-0 bg-green-300 animate-text_reveal_box_3"
 				/>
 			</h1>
-			<a
-				href="#projects"
-				type="button"
-				class="border-2 border-green-300 text-gray-50 px-4 mt-10 hover:bg-green-300 ">Portfolio</a
-			>
+			<div>
+				<a
+					href="#projects"
+					type="button"
+					class="border-2 border-green-300 text-gray-50 px-4 mt-10 hover:bg-green-300 ">Portfolio</a
+				>
+			</div>
 		</div>
 	</div>
 </section>
+
+<style>
+	h1 {
+		@apply md:text-6xl md:ml-5;
+	}
+	a {
+		@apply md:text-2xl md:ml-5;
+	}
+</style>

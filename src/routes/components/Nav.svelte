@@ -16,11 +16,11 @@
 		<div class="flex items-center justify-end w-full height-full p-1">
 			<div class="nav-list">
 				<div
-					class="h-10 w-10 border border-gray-100 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 mr-2"
+					class="h-10 w-10 border border-gray-400 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 mr-2"
 					on:click={navToggle}
 				>
-					<i class="fas fa-bars text-gray-100" />
-					<div class="h-10 w-10 border border-gray-100 rounded-full absolute animate-ping" />
+					<i class="fas fa-bars text-gray-400" />
+					<div class="h-10 w-10 border border-gray-400 rounded-full absolute animate-ping" />
 				</div>
 
 				{#if isNavOn}
