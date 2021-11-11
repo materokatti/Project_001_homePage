@@ -30,8 +30,13 @@
 						out:fly={{ duration: 500, x: 1000, easing: quartInOut }}
 					>
 						{#each navList as list}
-							<li>
-								<a on:click={navToggle} href={list.href} data-after={list.title}>
+							<li class="md:mb-5">
+								<a
+									class="md:text-3xl"
+									on:click={navToggle}
+									href={list.href}
+									data-after={list.title}
+								>
 									{list.title}
 								</a>
 							</li>
