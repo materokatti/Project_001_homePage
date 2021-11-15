@@ -1,7 +1,14 @@
 <section id="contact">
 	<div class="container flex-col">
-		<h1 class="title mb-3">Contact</h1>
-		<div class="flex flex-col justify-center border-2 p-2 rounded-lg shadow-lg space-y-2">
+		<h1
+			class="title mb-3
+		"
+		>
+			Contact
+		</h1>
+		<div
+			class="flex flex-col justify-center border-2 p-2 rounded-lg shadow-lg space-y-2 md:space-y-0 md:p-7 md:grid md:grid-cols-2 md:gap-5"
+		>
 			<div>
 				<i class="fas fa-envelope" />
 				<span class="font-light text-sm">materokatti@gmail.com</span>
