@@ -16,10 +16,10 @@
 		<div class="service-top">
 			<h1 class="title">Who Am I</h1>
 		</div>
-		<div class="grid grid-cols-2 gap-5 mt-4 md:grid-cols-4">
+		<div class="grid grid-cols-2 gap-5 mt-4 md:mt-10 md:gap-10">
 			{#each aboutImg as img, index}
 				<img
-					class="transform-gpu p-5 w-24 h-24 shadow-xl hover:scale-125 transition-all"
+					class="transform-gpu p-5 w-24 h-24 shadow-xl hover:scale-125 transition-all border-2 md:w-52 md:h-52 md:p-12"
 					src={img.src}
 					alt="about me icon"
 					on:click={() => {
