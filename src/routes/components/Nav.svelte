@@ -11,12 +11,12 @@
 	$: console.log('isNavOn', isNavOn);
 </script>
 
-<header class="fixed left-0 top-0 w-screen h-auto z-50 ">
-	<div class="container min-h-full transition-all">
+<header class="fixed left-0 top-0 w-screen h-auto z-50">
+	<div class="container min-h-full transition-all lg:max-w-full">
 		<div class="flex items-center justify-end w-full height-full p-1">
 			<div class="nav-list ">
 				<div
-					class="h-10 w-10 border border-gray-400 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 md:scale-100 m-1 md:m-7"
+					class="h-10 w-10 border border-gray-400 rounded-full relative flex items-center justify-center cursor-pointer transform scale-75 md:scale-100 m-1 md:m-7 lg:mr-20"
 					on:click={navToggle}
 				>
 					<i class="fas fa-bars text-gray-400" />
