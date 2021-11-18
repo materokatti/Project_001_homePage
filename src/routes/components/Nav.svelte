@@ -8,7 +8,7 @@
 	const navToggle = () => {
 		isNavOn = !isNavOn;
 	};
-	$: console.log('isNavOn', isNavOn);
+	// $: console.log('isNavOn', isNavOn);
 </script>
 
 <header class="fixed left-0 top-0 w-screen h-auto z-50">
