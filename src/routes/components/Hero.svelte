@@ -10,7 +10,7 @@
 </script>
 
 <script>
-	export let backgroundUrl;
+	// export let backgroundUrl;
 </script>
 
 <section class="hero relative z-10 bg-hero-back-to-t">
