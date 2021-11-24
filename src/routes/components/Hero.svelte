@@ -1,16 +1,16 @@
 <script context="module">
-	export async function load({ page, fetch, session, context }) {
-		const response = await fetch('$lib/images/beach.jpeg');
-		const result = await response.json();
-		const backgroundUrl = result;
-		return {
-			props: { backgroundUrl }
-		};
-	}
+	// export async function load({ page, fetch, session, context }) {
+	// 	const response = await fetch('$lib/images/beach.jpeg');
+	// 	const result = await response.json();
+	// 	const backgroundUrl = result;
+	// 	return {
+	// 		props: { backgroundUrl }
+	// 	};
+	// }
 </script>
 
 <script>
-	export let backgroundUrl;
+	// export let backgroundUrl;
 </script>
 
 <section class="hero relative z-10 bg-hero-back-to-t">
