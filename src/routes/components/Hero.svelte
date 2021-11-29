@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
 	export async function load({ page, fetch, session, context }) {
 		const response = await fetch('$lib/images/beach.jpeg');
 		const result = await response.json();
@@ -7,10 +7,9 @@
 			props: { backgroundUrl }
 		};
 	}
-</script>
-
+</script> -->
 <script>
-	export let backgroundUrl;
+	// export let backgroundUrl;
 </script>
 
 <section class="hero relative z-10 bg-hero-back-to-t">
