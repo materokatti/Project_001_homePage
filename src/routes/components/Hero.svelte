@@ -1,4 +1,4 @@
-<!-- <script context="module">
+<script context="module">
 	export async function load({ page, fetch, session, context }) {
 		const response = await fetch('$lib/images/beach.jpeg');
 		const result = await response.json();
@@ -7,7 +7,8 @@
 			props: { backgroundUrl }
 		};
 	}
-</script> -->
+</script>
+
 <script>
 	// export let backgroundUrl;
 </script>
